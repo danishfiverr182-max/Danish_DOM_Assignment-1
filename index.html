@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Assignment-1</title>
+
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+      padding: 40px;
+      transition: background 0.6s ease;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1e293b;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+    }
+
+    p {
+      color: #334155;
+      font-size: 15px;
+    }
+
+    button {
+      margin-top: 12px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    input {
+      width: 100%;
+      padding: 10px 15px;
+      border-radius: 25px;
+      border: 1px solid #cbd5f5;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #0f172a;
+      margin-bottom: 10px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="heading">Hello World</h1>
+
+  <div class="container">
+
+    <div class="card">
+      <span class="label">
+        <strong>Task 2 "Change Paragraph Text on Button Click"</strong>
+      </span>
+
+      <p id="para">
+        <strong>Student:</strong> Hello sir, how are you? I hope you are doing well.
+        <strong>(Click the reply button for reply)</strong>
+      </p>
+
+      <button onclick="reply()">Reply</button>
+    </div>
+
+
+    <div class="card">
+      <span class="label">
+        <strong>Task 3 "Change Background Color on Button Click"</strong>
+      </span>
+      <button onclick="changeBackground()">
+        <strong>Change Background Color</strong>
+      </button>
+    </div>
+
+    <div class="card">
+      <span class="label">
+        <strong>Task 4 "Show Alert Message on Button Click"</strong>
+      </span>
+      <button onclick="showAlert()">Show Alert</button>
+    </div>
+
+
+    <div class="card">
+      <span class="label">
+        <strong>Task 5: Update Text Using Input Field</strong>
+      </span>
+      <input type="text" id="userInput" placeholder="Type something here">
+      <button onclick="updateText()">Update Text</button>
+      <p id="output"></p>
+    </div>
+
+  </div>
+
+</body>
+</html>
